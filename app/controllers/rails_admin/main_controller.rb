@@ -6,7 +6,7 @@ module RailsAdmin
     include RailsAdmin::MainHelper
     include RailsAdmin::ApplicationHelper
 
-    before_action :check_for_cancel
+    layout 'rails_admin/application'
 
     def bulk_action
       get_model
